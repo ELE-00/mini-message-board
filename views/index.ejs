@@ -1,0 +1,11 @@
+<!-- index.ejs -->
+
+  <ul>
+    <% messages.forEach((message, index) => { %>
+      <%- include('messages.ejs', { message: message, index: index }) %>
+    <% }) %>
+  </ul>
+  
+  <a href="/new"> 
+      <button>Add Message</button>    
+  </a>

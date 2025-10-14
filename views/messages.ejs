@@ -1,0 +1,12 @@
+<!-- views/messages.ejs -->
+
+<div style="background-color: rgb(244, 244, 244); border: 1px solid rgb(190, 190, 190); margin: 5px">
+    <h3 style="margin: 5px"> <%= message.user %> </h3>
+    <p style="margin: 5px"> <%= message.text %> </p>
+    <p style="margin: 5px; color:rgb(132, 132, 132)"> <%= message.added %> </p>
+
+    <a href="/messages/<%= index %>"> 
+    <button style="border: none" >View details</button> 
+    </a>
+
+</div>
